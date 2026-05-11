@@ -223,6 +223,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--accent-color);
 }
 .btn {
   padding: var(--space-md) var(--space-xl);

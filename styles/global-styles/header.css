@@ -1,10 +1,11 @@
 header {
-  background-image: url(/assets/images/future.png);
+  background-image: url("/assets/images/future.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: fit;
   position: relative;
+  padding-top: 2rem;
 }
 .navigation {
   display: flex;
