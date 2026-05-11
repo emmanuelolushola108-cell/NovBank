@@ -1,0 +1,100 @@
+main {
+  background-color: var(--bg-color);
+  padding: 4rem var(--space-md);
+}
+.main_hd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.main_hd p {
+  text-align: center;
+  line-height: 1.4;
+}
+.main_hd h3 {
+  color: var(--text-primary);
+}
+.main_hd .hd_first {
+  color: var(--primary-color);
+}
+.main_hd p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.grid_by2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 0rem;
+  gap: 1rem;
+}
+.grid_card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem 0.8rem;
+  background-color: var(--glass-bg);
+  border-radius: 0.8rem;
+  border: 1px solid var(--primary-color);
+  align-items: center;
+}
+.grid_content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+.grid_content:last-child {
+  gap: 0;
+}
+.content_bold {
+  font-size: var(--font-lg);
+  color: var(--text-primary);
+  font-weight: var(--font-normal);
+}
+.content_light {
+  color: rgba(255, 255, 255, 0.6);
+}
+.txt_align {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.txt_align span {
+  display: flex;
+  align-items: center;
+}
+.instant {
+  background-color: var(--primary-color);
+}
+.analytics {
+  background-color: rgb(238, 136, 238);
+}
+.bill {
+  background-color: lightsalmon;
+}
+.security {
+  background-color: rgb(197, 18, 197);
+}
+.flex_two {
+  margin-top: 0.8rem;
+  border: none;
+  box-shadow: var(--shadow-t);
+  padding: 0 2rem 0.4rem 1rem;
+}
+.bank_vector {
+  width: 10rem;
+}
+.content_hd {
+  color: var(--text-primary);
+}
+.content_sub {
+  margin-top: 0.4rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.content_cta_con {
+  padding: 1.6rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.content_padding {
+  padding: 0.8rem;
+}
