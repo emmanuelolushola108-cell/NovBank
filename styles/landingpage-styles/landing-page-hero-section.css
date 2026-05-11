@@ -102,3 +102,14 @@
 .transaction {
   background-color: var(--primary-light);
 }
+.hero_section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.section_layer1,
+.section_layer2 {
+  position: relative;
+  z-index: 1;
+}

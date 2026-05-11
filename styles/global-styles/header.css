@@ -12,6 +12,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: var(--space-sm);
+  position: relative;
+  z-index: 1;
 }
 .logo {
   max-width: 8rem;

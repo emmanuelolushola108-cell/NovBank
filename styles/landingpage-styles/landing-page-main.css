@@ -1,6 +1,8 @@
 main {
   background-color: var(--bg-color);
   padding: 4rem var(--space-md);
+  /* border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem; */
 }
 .main_hd {
   display: flex;
