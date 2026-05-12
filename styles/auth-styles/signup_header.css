@@ -52,7 +52,7 @@ main {
 .login_form {
   margin-top: 4rem;
   padding: 2rem 1.6rem;
-  border: 1px solid var(--primary-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1.2rem;
   background-color: var(--glass-bg);
   line-height: 1.6;
