@@ -1,0 +1,15 @@
+.password_entries_con {
+  display: flex;
+  justify-content: space-between;
+}
+.hor_flex {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.login_divider {
+  width: min(8rem, 100%);
+}
+body {
+  padding-bottom: 2rem;
+}

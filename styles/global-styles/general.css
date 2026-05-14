@@ -282,3 +282,43 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+.authentication_flex {
+  position: relative;
+  width: 100%;
+}
+
+.signup_flex,
+.login_flex {
+  position: absolute;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.login_flex {
+  left: 0;
+}
+
+.signup_flex {
+  left: -100%;
+}
+
+/* show signup */
+.sign_up {
+  left: 0;
+}
+
+/* move login out */
+.remove_login {
+  left: 100%;
+  opacity: 0;
+}
+
+/* reset states */
+.login_show {
+  left: 0;
+}
+
+.signup_hide {
+  left: -100%;
+  opacity: 0;
+}

@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="styles/global-styles/general.css" />
     <link rel="stylesheet" href="styles/auth-styles/signup_header.css" />
+    <link rel="stylesheet" href="styles/auth-styles/login.css" />
   </head>
   <body>
     <header class="header">
@@ -46,227 +47,375 @@
         <p>Dark Mode</p>
       </div>
     </header>
-    <main>
-      <div class="body_header">
-        <div class="hor_align login_hor">
-          <p>Join NovaBank Today!</p>
-          <img src="assets/icons/rocket_231138.png" alt="" class="icon" />
-        </div>
-        <div class="header_txt">
-          <h1>Create Your <span>Account</span></h1>
-          <p>
-            Start your journey to smarter banking. It's quick,<br />easy and
-            secure.
-          </p>
-        </div>
-      </div>
-      <form class="login_form">
-        <h2>Create Your Account</h2>
-        <p>Fill in your details to get started with NovaBank</p>
-        <div class="input_con">
-          <h4>Full Name</h4>
-          <div class="input_field">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#f8fafc"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-user-icon lucide-user"
-            >
-              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
-            <input
-              placeholder="Enter your full name"
-              type="text"
-              class="user_name input"
-            />
+    <div class="authentication_flex">
+      <main class="signup_flex">
+        <div class="body_header">
+          <div class="hor_align login_hor">
+            <p>Join NovaBank Today!</p>
+            <img src="assets/icons/rocket_231138.png" alt="" class="icon" />
+          </div>
+          <div class="header_txt">
+            <h1>Create Your <span>Account</span></h1>
+            <p>
+              Start your journey to smarter banking. It's quick,<br />easy and
+              secure.
+            </p>
           </div>
         </div>
-        <div class="input_con">
-          <h4>Email Address</h4>
-          <div class="input_field">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#f8fafc"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail-icon lucide-mail"
-            >
-              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-            </svg>
-            <input
-              placeholder="Enter your email"
-              type="email"
-              class="user_email input"
-            />
+        <form class="login_form">
+          <h2>Create Your Account</h2>
+          <p>Fill in your details to get started with NovaBank</p>
+          <div class="input_con">
+            <h4>Full Name</h4>
+            <div class="input_field">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-icon lucide-user"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <input
+                placeholder="Enter your full name"
+                type="text"
+                class="user_name input"
+              />
+            </div>
           </div>
-        </div>
-        <div class="input_con">
-          <h4>Phone Number</h4>
-          <div class="input_field">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#f8fafc"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-phone-icon lucide-phone"
-            >
-              <path
-                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+          <div class="input_con">
+            <h4>Email Address</h4>
+            <div class="input_field">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail-icon lucide-mail"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>
+              <input
+                placeholder="Enter your email"
+                type="email"
+                class="user_email input"
               />
-            </svg>
-            <input
-              placeholder="Enter your phone number"
-              type="number"
-              class="user_phone input"
-            />
+            </div>
           </div>
-        </div>
-        <div class="input_con">
-          <h4>Password</h4>
-          <div class="input_field">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#f8fafc"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole"
-            >
-              <circle cx="12" cy="16" r="1" />
-              <rect x="3" y="10" width="18" height="12" rx="2" />
-              <path d="M7 10V7a5 5 0 0 1 10 0v3" />
-            </svg>
-            <input
-              placeholder="Create a password"
-              type="password"
-              class="user_password input"
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#f8fafc"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-eye-off-icon lucide-eye-off"
-            >
-              <path
-                d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"
+          <div class="input_con">
+            <h4>Phone Number</h4>
+            <div class="input_field">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-phone-icon lucide-phone"
+              >
+                <path
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 
+17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 
+0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 
+0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                />
+              </svg>
+              <input
+                placeholder="Enter your phone number"
+                type="number"
+                class="user_phone input"
               />
-              <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
-              <path
-                d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"
-              />
-              <path d="m2 2 20 20" />
-            </svg>
+            </div>
           </div>
-        </div>
-        <div class="input_con">
-          <h4>Confirm Password</h4>
-          <div class="input_field">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#f8fafc"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole"
-            >
-              <circle cx="12" cy="16" r="1" />
-              <rect x="3" y="10" width="18" height="12" rx="2" />
-              <path d="M7 10V7a5 5 0 0 1 10 0v3" />
-            </svg>
-            <input
-              placeholder="Confirm your password"
-              type="password"
-              class="user_email input"
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#f8fafc"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-eye-off-icon lucide-eye-off"
-            >
-              <path
-                d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"
+          <div class="input_con">
+            <h4>Password</h4>
+            <div class="input_field">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole"
+              >
+                <circle cx="12" cy="16" r="1" />
+                <rect x="3" y="10" width="18" height="12" rx="2" />
+                <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+              </svg>
+              <input
+                placeholder="Create a password"
+                type="password"
+                class="user_password input"
               />
-              <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
-              <path
-                d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"
-              />
-              <path d="m2 2 20 20" />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-eye-off-icon lucide-eye-off"
+              >
+                <path
+                  d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 
+0 .696 10.747 10.747 0 0 1-1.444 2.49"
+                />
+                <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+                <path
+                  d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 
+0-.696 10.75 10.75 0 0 1 4.446-5.143"
+                />
+                <path d="m2 2 20 20" />
+              </svg>
+            </div>
           </div>
-        </div>
-        <div class="terms_privacy">
-          <input type="radio" class="privacy_approval" />
-          <p>
-            I agree to the <a href="#">Terms of Services</a> and
-            <a href="#">Privacy Policy</a>
-          </p>
-        </div>
-        <button type="submit" class="create_account_btn button">
-          Create Account
-        </button>
-        <div class="signup_options_con_txt">
-          <div class="hor_divider"></div>
-          <p>Or sign up with</p>
-          <div class="hor_divider"></div>
-        </div>
-        <div class="signup_options">
-          <button class="google button_opt">
-            <img src="assets/icons/google_2702602.png" alt="" class="icon_lg" />
+          <div class="input_con">
+            <h4>Confirm Password</h4>
+            <div class="input_field">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole"
+              >
+                <circle cx="12" cy="16" r="1" />
+                <rect x="3" y="10" width="18" height="12" rx="2" />
+                <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+              </svg>
+              <input
+                placeholder="Confirm your password"
+                type="password"
+                class="user_email input"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-eye-off-icon lucide-eye-off"
+              >
+                <path
+                  d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 
+0 .696 10.747 10.747 0 0 1-1.444 2.49"
+                />
+                <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+                <path
+                  d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 
+0-.696 10.75 10.75 0 0 1 4.446-5.143"
+                />
+                <path d="m2 2 20 20" />
+              </svg>
+            </div>
+          </div>
+          <div class="terms_privacy">
+            <input type="radio" class="privacy_approval" />
+            <p>
+              I agree to the <a href="#">Terms of Services</a> and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <button type="submit" class="create_account_btn button">
+            Create Account
           </button>
-          <button class="apple button_opt">
-            <img
-              src="assets/icons/social_10092375.png"
-              alt=""
-              class="icon_lg"
-            />
-          </button>
-          <button class="email button_opt">
-            <img src="assets/icons/gmail_281786.png" alt="" class="icon_lg" />
-          </button>
+          <div class="signup_options_con_txt">
+            <div class="hor_divider"></div>
+            <p>Or sign up with</p>
+            <div class="hor_divider"></div>
+          </div>
+          <div class="signup_options">
+            <button class="google button_opt">
+              <img
+                src="assets/icons/google_2702602.png"
+                alt=""
+                class="icon_lg"
+              />
+            </button>
+            <button class="apple button_opt">
+              <img
+                src="assets/icons/social_10092375.png"
+                alt=""
+                class="icon_lg"
+              />
+            </button>
+            <button class="email button_opt">
+              <img src="assets/icons/gmail_281786.png" alt="" class="icon_lg" />
+            </button>
+          </div>
+          <div class="login_suggestion_link">
+            <h4>Already have an account? <a href="#">Login</a></h4>
+          </div>
+        </form>
+      </main>
+      <main class="login_flex">
+        <div class="body_header">
+          <div class="hor_align login_hor">
+            <p>Welcome Back!</p>
+            <img src="assets/icons/rocket_231138.png" alt="" class="icon" />
+          </div>
+          <div class="header_txt">
+            <h1>Welcome to <span>NovaBank</span></h1>
+            <p>
+              Secure. Fast. Reliable<br />Your modern banking experience starts
+              here.
+            </p>
+          </div>
         </div>
-        <div class="login_suggestion_link">
-          <h4>Already have an account? <a href="#">Login</a></h4>
-        </div>
-      </form>
-    </main>
+        <form class="login_form">
+          <h2>Login to Your Account</h2>
+          <p>Enter your credentials to access your account</p>
+          <div class="input_con">
+            <h4>Email Address</h4>
+            <div class="input_field">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail-icon lucide-mail"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>
+              <input
+                placeholder="Enter your email"
+                type="email"
+                class="user_email input"
+              />
+            </div>
+          </div>
+          <div class="input_con">
+            <h4>Password</h4>
+            <div class="input_field">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole"
+              >
+                <circle cx="12" cy="16" r="1" />
+                <rect x="3" y="10" width="18" height="12" rx="2" />
+                <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+              </svg>
+              <input
+                placeholder="Create a password"
+                type="password"
+                class="user_password input"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f8fafc"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-eye-off-icon lucide-eye-off"
+              >
+                <path
+                  d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 
+0 .696 10.747 10.747 0 0 1-1.444 2.49"
+                />
+                <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+                <path
+                  d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 
+0-.696 10.75 10.75 0 0 1 4.446-5.143"
+                />
+                <path d="m2 2 20 20" />
+              </svg>
+            </div>
+          </div>
+          <div class="terms_privacy password_entries_con">
+            <div class="hor_flex">
+              <input type="radio" class="privacy_approval" />
+              <p>Remember me</p>
+            </div>
+            <p>
+              <a href="#">Forgot password?</a>
+            </p>
+          </div>
+          <button type="submit" class="create_account_btn button">Login</button>
+          <div class="signup_options_con_txt">
+            <div class="hor_divider login_divider"></div>
+            <p>Or continue with</p>
+            <div class="hor_divider login_divider"></div>
+          </div>
+          <div class="signup_options">
+            <button class="google button_opt">
+              <img
+                src="assets/icons/google_2702602.png"
+                alt=""
+                class="icon_lg"
+              />
+            </button>
+            <button class="apple button_opt">
+              <img
+                src="assets/icons/social_10092375.png"
+                alt=""
+                class="icon_lg"
+              />
+            </button>
+            <button class="email button_opt">
+              <img src="assets/icons/gmail_281786.png" alt="" class="icon_lg" />
+            </button>
+          </div>
+          <div class="login_suggestion_link">
+            <h4>
+              Dont't have an account?
+              <a href="#" class="sign_up_link">Sign up</a>
+            </h4>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="src/auth/signup.js"></script>
   </body>
 </html>
