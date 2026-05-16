@@ -155,3 +155,7 @@ body {
   justify-content: center;
   margin-top: 1.6rem;
 }
+main {
+  min-height: 100vh;
+  overflow-y: auto;
+}

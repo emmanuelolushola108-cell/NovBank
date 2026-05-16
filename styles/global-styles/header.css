@@ -1,16 +1,13 @@
 header {
-  background-image: url("../../assets/images/future.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   padding-top: 2rem;
+  background: var(--gradient-secondary);
 }
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-sm);
+  padding: 0 1rem;
   position: relative;
   z-index: 1;
 }
@@ -37,26 +34,9 @@ header {
   display: flex;
   gap: var(--space-md);
 }
-.left_nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .btn:hover {
   transform: translateY(0.4rem);
-}
-.login_btn {
-  background-color: var(--bg-color);
-  border: 0.5px solid var(--primary-light);
-  box-shadow: var(--shadow);
-}
-.login_btn:hover,
-.open_acc_btn:hover,
-.view_demo_btn:hover {
-  background-color: var(--hover);
-  border: 1px solid;
-  color: var(--primary-light);
 }
 .logo_text {
   font-weight: var(--font-normal);
@@ -65,17 +45,4 @@ header {
 }
 .logo_span {
   color: var(--text-primary);
-}
-.open_account_btn {
-  background-color: var(--primary-color);
-  border: none;
-  color: var(--text-primary);
-  font-size: var(--font-sm);
-  padding: var(--space-sm) var(--space-xl);
-  border-radius: var(--radius-md);
-}
-.open_account_btn:hover {
-  background-color: var(--hover);
-  border: none;
-  color: var(--primary-light);
 }

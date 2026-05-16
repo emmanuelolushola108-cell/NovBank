@@ -4,6 +4,17 @@
   padding: 4rem 1rem;
   flex-direction: column;
 }
+.hero_section {
+  display: flex;
+}
+.banking_vector_img {
+  position: absolute;
+  top: 4rem;
+  left: 14rem;
+}
+.banking_vector_img img {
+  height: 30rem;
+}
 .section_layer1 {
   display: flex;
   /* align-items: center; */
@@ -22,19 +33,23 @@
   font-weight: var(--font-normal);
 }
 .open_acc_btn {
-  background-color: var(--primary-light);
+  background: var(--gradient-btn-primary);
 }
-.hero_cta,
+.hero_cta {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 1.6rem;
+}
+.hero_cta .btn {
+  margin-right: 12rem;
+}
 .active_customers_con {
   padding-top: var(--space-md);
   display: flex;
   gap: var(--space-lg);
   align-items: center;
-}
-.view_demo_btn {
-  background-color: var(--bg-color);
-  border: 1px solid var(--primary-dark);
-  box-shadow: var(--shadow);
 }
 .active_img_con {
   display: flex;
@@ -90,11 +105,11 @@
   font-weight: 200;
   color: rgba(255, 255, 255, 0.6);
 }
-.divider {
-  height: 3rem;
-  border-radius: 1rem;
-  width: 2px;
-  background-color: var(--border-light);
+.section_layer1 span {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .customers {
   background-color: var(--primary-color);
@@ -112,4 +127,17 @@
 .section_layer2 {
   position: relative;
   z-index: 1;
+}
+.explore_features_btn,
+.login_btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.open_acc_btn:hover {
+  background: var(--gradient-btn-hover);
+  color: var(--text-primary);
+}
+.explore_features_btn:hover,
+.login_btn:hover {
+  background-color: var(--hover);
+  color: var(--primary-light);
 }
