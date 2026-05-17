@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaBank - Dashboard</title>
+    <link rel="stylesheet" href="styles/global-styles/general.css" />
+    <link
+      rel="stylesheet"
+      href="styles/dashboard-styles/dashboard-header.css"
+    />
+    <link rel="stylesheet" href="styles/dashboard-styles/dashboard-main.css" />
+  </head>
+  <body>
+    <header class="dashboard_header">
+      <nav class="dashboard_navigation">
+        <div class="dash_left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#f8fafc"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu-icon lucide-menu"
+          >
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+          <p>Nova<span>Bank</span></p>
+        </div>
+        <div class="dash_right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#f8fafc"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-bell-icon lucide-bell"
+          >
+            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+            <path
+              d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+            />
+          </svg>
+          <div class="circle">
+            <img src="assets/images/profile.png" alt="" class="icon_lg" />
+          </div>
+        </div>
+      </nav>
+      <div class="user_greet_board">
+        <p class="greet">Good morning,</p>
+        <h2>John Doe 👋</h2>
+      </div>
+      <div class="user_dashboard">
+        <div class="balance_view_con">
+          <p>Total Balance</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#f8fafc"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-eye-off-icon lucide-eye-off"
+          >
+            <path
+              d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"
+            />
+            <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+            <path
+              d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"
+            />
+            <path d="m2 2 20 20" />
+          </svg>
+        </div>
+        <div class="balance_con">
+          <h2>$2,450,000.00</h2>
+        </div>
+        <div class="available_balance_con">
+          <p>Available Balance</p>
+          <p class="avail_balance">$2,350,000.00</p>
+        </div>
+        <div class="stat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#f8fafc"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chart-no-axes-column-icon lucide-chart-no-axes-column"
+          >
+            <path d="M5 21v-6" />
+            <path d="M12 21V3" />
+            <path d="M19 21V9" />
+          </svg>
+        </div>
+      </div>
+      <div class="user_services_con">
+        <div class="service_card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1d4ed8"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-left-right-icon lucide-arrow-left-right"
+          >
+            <path d="M8 3 4 7l4 4" />
+            <path d="M4 7h16" />
+            <path d="m16 21 4-4-4-4" />
+            <path d="M20 17H4" />
+          </svg>
+          Transfer
+        </div>
+        <div class="service_card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#3b82f6"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-plus-icon lucide-circle-plus"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12h8" />
+            <path d="M12 8v8" />
+          </svg>
+          Top Up
+        </div>
+        <div class="service_card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#06b6d4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-receipt-text-icon lucide-receipt-text"
+          >
+            <path d="M13 16H8" />
+            <path d="M14 8H8" />
+            <path d="M16 12H8" />
+            <path
+              d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"
+            />
+          </svg>
+          Pay Bills
+        </div>
+        <div class="service_card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1d4ed8"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-layout-grid-icon lucide-layout-grid"
+          >
+            <rect width="7" height="7" x="3" y="3" rx="1" />
+            <rect width="7" height="7" x="14" y="3" rx="1" />
+            <rect width="7" height="7" x="14" y="14" rx="1" />
+            <rect width="7" height="7" x="3" y="14" rx="1" />
+          </svg>
+          Transfer
+        </div>
+      </div>
+    </header>
+    <main class="dashboard_main">
+      <div class="accounts">
+        <div class="accounts_hd">
+          <p>My Accounts</p>
+          <p class="view_all">View All</p>
+        </div>
+        <div class="account_detail">
+          <div class="detail_left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f8fafc"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wallet-icon lucide-wallet"
+            >
+              <path
+                d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+              />
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+            </svg>
+            <div class="flex_row">
+              <p class="account_type">Savings Account</p>
+              <p class="account_id">**** **** **** 1234</p>
+            </div>
+          </div>
+          <div class="detail_right">
+            <p class="account_bal">$2,350,000.00</p>
+            <div class="account_mode">
+              <p class="mode">Active</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recent_transaction_con">
+        <div class="accounts_hd">
+          <p>Recent Transactions</p>
+          <p class="view_all">See All</p>
+        </div>
+        <div class="transaction_detail">
+          <div class="detail_left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f8fafc"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wifi-icon lucide-wifi"
+            >
+              <path d="M12 20h.01" />
+              <path d="M2 8.82a15 15 0 0 1 20 0" />
+              <path d="M5 12.859a10 10 0 0 1 14 0" />
+              <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+            </svg>
+            <div class="flex_row">
+              <p class="account_type">Airtime Purchase</p>
+              <p class="account_id">Today,<span>10:30AM</span></p>
+            </div>
+          </div>
+          <div class="detail_right">
+            <p class="account_bal">$2,350.00</p>
+            <div class="account_mode">
+              <p class="mode">successful</p>
+            </div>
+          </div>
+        </div>
+        <div class="transaction_detail">
+          <div class="detail_left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f8fafc"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wifi-icon lucide-wifi"
+            >
+              <path d="M12 20h.01" />
+              <path d="M2 8.82a15 15 0 0 1 20 0" />
+              <path d="M5 12.859a10 10 0 0 1 14 0" />
+              <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+            </svg>
+            <div class="flex_row">
+              <p class="account_type">Airtime Purchase</p>
+              <p class="account_id">Today,<span>10:30AM</span></p>
+            </div>
+          </div>
+          <div class="detail_right">
+            <p class="account_bal">$2,350.00</p>
+            <div class="account_mode">
+              <p class="mode">successful</p>
+            </div>
+          </div>
+        </div>
+        <div class="transaction_detail">
+          <div class="detail_left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f8fafc"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wifi-icon lucide-wifi"
+            >
+              <path d="M12 20h.01" />
+              <path d="M2 8.82a15 15 0 0 1 20 0" />
+              <path d="M5 12.859a10 10 0 0 1 14 0" />
+              <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+            </svg>
+            <div class="flex_row">
+              <p class="account_type">Airtime Purchase</p>
+              <p class="account_id">Today,<span>10:30AM</span></p>
+            </div>
+          </div>
+          <div class="detail_right">
+            <p class="account_bal">$2,350.00</p>
+            <div class="account_mode">
+              <p class="mode">successful</p>
+            </div>
+          </div>
+        </div>
+        <div class="transaction_detail">
+          <div class="detail_left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f8fafc"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wifi-icon lucide-wifi"
+            >
+              <path d="M12 20h.01" />
+              <path d="M2 8.82a15 15 0 0 1 20 0" />
+              <path d="M5 12.859a10 10 0 0 1 14 0" />
+              <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+            </svg>
+            <div class="flex_row">
+              <p class="account_type">Airtime Purchase</p>
+              <p class="account_id">Today,<span>10:30AM</span></p>
+            </div>
+          </div>
+          <div class="detail_right">
+            <p class="account_bal">$2,350.00</p>
+            <div class="account_mode">
+              <p class="mode">successful</p>
+            </div>
+          </div>
+        </div>
+        <div class="transaction_detail">
+          <div class="detail_left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f8fafc"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wifi-icon lucide-wifi"
+            >
+              <path d="M12 20h.01" />
+              <path d="M2 8.82a15 15 0 0 1 20 0" />
+              <path d="M5 12.859a10 10 0 0 1 14 0" />
+              <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+            </svg>
+            <div class="flex_row">
+              <p class="account_type">Airtime Purchase</p>
+              <p class="account_id">Today,<span>10:30AM</span></p>
+            </div>
+          </div>
+          <div class="detail_right">
+            <p class="account_bal">$2,350.00</p>
+            <div class="account_mode">
+              <p class="mode">successful</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bottom_navigation">
+      <div class="action_con">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#f8fafc"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-house-icon lucide-house"
+        >
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+        </svg>
+        <p>Dashboard</p>
+      </div>
+      <div class="action_con">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#f8fafc"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-wallet-icon lucide-wallet"
+        >
+          <path
+            d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+          />
+          <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+        </svg>
+        <p>Accounts</p>
+      </div>
+      <div class="action_con">
+        <div class="transfer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+          >
+            <path d="M7 7h10v10" />
+            <path d="M7 17 17 7" />
+          </svg>
+        </div>
+
+        <p>Transfer</p>
+      </div>
+      <div class="action_con">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#f8fafc"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-credit-card-icon lucide-credit-card"
+        >
+          <rect width="20" height="14" x="2" y="5" rx="2" />
+          <line x1="2" x2="22" y1="10" y2="10" />
+        </svg>
+        <p>Cards</p>
+      </div>
+      <div class="action_con">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#f8fafc"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-user-round-pen-icon lucide-user-round-pen"
+        >
+          <path d="M2 21a8 8 0 0 1 10.821-7.487" />
+          <path
+            d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
+          />
+          <circle cx="10" cy="8" r="5" />
+        </svg>
+        <p>Profile</p>
+      </div>
+    </div>
+  </body>
+</html>

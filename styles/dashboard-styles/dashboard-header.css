@@ -1,0 +1,91 @@
+body {
+  background: var(--gradient-secondary);
+  padding: 2rem 1.6rem;
+}
+.dashboard_navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash_left,
+.dash_right {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  color: var(--text-primary);
+}
+.circle {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid var(--primary-dark);
+  border-radius: 2rem;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_greet_board {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+.greet {
+  color: var(--text);
+  font-size: var(--font-lg);
+}
+.user_dashboard {
+  background: var(--gradient-btn-hover);
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  border: none;
+  margin-top: 1.6rem;
+  position: relative;
+}
+.balance_view_con {
+  display: flex;
+  gap: 0.8rem;
+  color: var(--text);
+}
+.balance_con {
+  margin-top: 0.8rem;
+  color: var(--text-primary);
+}
+.available_balance_con {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+  gap: 0.8rem;
+  color: var(--text);
+}
+.avail_balance {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.stat {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+.user_services_con {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+.service_card {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+  gap: 0.8rem;
+}

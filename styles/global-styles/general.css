@@ -30,6 +30,7 @@
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
+  --text: rgba(255, 255, 255, 0.6);
 
   /* =========================
      BORDER COLORS
@@ -48,7 +49,7 @@
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-md: 1rem;
-  --font-lg: 1.25rem;
+  --font-lg: 1.2rem;
   --font-xl: 1.5rem;
   --font-2xl: 2rem;
 
@@ -220,6 +221,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  position: relative;
 }
 a {
   text-decoration: none;

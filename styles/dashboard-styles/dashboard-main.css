@@ -1,0 +1,96 @@
+.accounts,
+.recent_transaction_con {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 1.6rem;
+  border-radius: 1.6rem;
+}
+.accounts_hd {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.8rem;
+  color: var(--text-primary);
+}
+
+.view_all {
+  color: var(--primary-dark);
+}
+.account_detail,
+.transaction_detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+.transaction_detail {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0.8rem;
+}
+.transaction_detail:last-child {
+  border-bottom: none;
+}
+.detail_left {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  color: var(--text-primary);
+}
+.flex_row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+}
+.account_id {
+  color: var(--text);
+}
+.account_mode {
+  background-color: #36e97862;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.8rem;
+  color: #36e978;
+  display: flex;
+  justify-content: center;
+}
+.detail_right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: end;
+}
+.account_bal {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+.bottom_navigation {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  margin-top: 2rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gradient-secondary);
+  border-radius: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.6rem;
+}
+.action_con {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+}
+.transfer {
+  background: var(--gradient-primary);
+  padding: 1.2rem;
+  border-radius: 50%;
+  margin-top: -2.6rem;
+}
