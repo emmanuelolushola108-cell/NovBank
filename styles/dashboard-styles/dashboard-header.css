@@ -1,11 +1,14 @@
 body {
   background: var(--gradient-secondary);
-  padding: 2rem 1.6rem;
+}
+.dashboard_header {
+  padding: 2rem 1.6rem 0rem 1.6rem;
 }
 .dashboard_navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .dash_left,
 .dash_right {
@@ -88,4 +91,17 @@ body {
   align-items: center;
   color: var(--text-primary);
   gap: 0.8rem;
+}
+.notification_icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--text-primary);
+  background-color: red;
+  right: 5.68rem;
+  top: 1.8rem;
 }
