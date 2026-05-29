@@ -69,6 +69,10 @@
   color: var(--text-primary);
   font-size: 1.2rem;
 }
+.balance_view_con {
+  display: flex;
+  align-items: center;
+}
 .bottom_navigation {
   margin: 0 0.4rem 0 0.4rem;
   position: sticky;

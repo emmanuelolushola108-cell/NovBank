@@ -29,7 +29,13 @@ export const createAccountNo = function () {
   return accNo.join("");
 };
 export const formatMovement = (obj) => {
-  const move = `$${obj.amount.toFixed(2)}`;
+  const move = `${formatCurrency(obj.amount)}`;
 
   return obj.type === "transfer" ? `-${move}` : move;
+};
+export const formatCurrency = (amount) => {
+  return amount.toLocaleString(navigator.language, {
+    style: "currency",
+    currency: "NGN",
+  });
 };

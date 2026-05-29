@@ -16,6 +16,13 @@ const loginLink = document.querySelector(".login_suggestion");
 const signupPage = document.querySelector(".signup_flex");
 const loginPage = document.querySelector(".login_flex");
 
+function clearPageSwitch() {
+  signupPage.classList.remove("signup_show");
+  loginPage.classList.remove("login_hide");
+  loginPage.classList.remove("login_show");
+  signupPage.classList.remove("signup_hide");
+}
+
 const signupNameInput = document.querySelector(".js_signup_name");
 
 const signupEmailInput = document.querySelector(".js_signup_email");
@@ -43,6 +50,17 @@ const loginInputFields = loginForm.querySelectorAll("input");
 const loginBtn = document.querySelector(".login_btn");
 const loginEmailInput = document.querySelector(".login_email");
 const loginPasswordInput = document.querySelector(".login_password");
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  clearErrorMsg();
+  clearInputFields(loginInputFields);
+});
+signupForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  clearErrorMsg();
+  clearInputFields(signupInputFields);
+});
 loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -89,4 +107,21 @@ signupBtn.addEventListener("click", (e) => {
     clearInputFields(inputFields);
   }
 });
-// auth.deleteUsers();
+
+signupLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  clearPageSwitch();
+
+  signupPage.classList.add("signup_show");
+  loginPage.classList.add("login_hide");
+  clearErrorMsg();
+  clearInputFields(loginInputFields);
+});
+loginLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  clearPageSwitch();
+  signupPage.classList.add("signup_hide");
+  loginPage.classList.add("login_show");
+  clearErrorMsg();
+  clearInputFields(signupInputFields);
+});

@@ -4,23 +4,6 @@ export const renderTransactions = (arr, con) => {
   arr.forEach((obj) => {
     html += ` <div class="transaction_detail">
  <div class="detail_left">
-   <svg
-     xmlns="http://www.w3.org/2000/svg"
-     width="24"
-     height="24"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="#f8fafc"
-     stroke-width="2"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     class="lucide lucide-wifi-icon lucide-wifi"
-   >
-     <path d="M12 20h.01" />
-     <path d="M2 8.82a15 15 0 0 1 20 0" />
-     <path d="M5 12.859a10 10 0 0 1 14 0" />
-     <path d="M8.5 16.429a5 5 0 0 1 7 0" />
-   </svg>
    <div class="flex_row">
      <p class="account_type">${obj.type}</p>
      <p class="account_id">${obj.timestamp}</
@@ -42,4 +25,15 @@ export const renderTransactions = (arr, con) => {
 </p>`;
   }
   con.insertAdjacentHTML("beforeend", html);
+};
+export const greetUser = () => {
+  let time = new Date().getHours();
+  if (time < 12) {
+    time = "Good Morning";
+  } else if (time < 18) {
+    time = "Good Afternoon";
+  } else {
+    time = "Good evening";
+  }
+  return time;
 };

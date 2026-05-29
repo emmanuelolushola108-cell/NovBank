@@ -1,4 +1,5 @@
 import { AuthManager } from "./AuthManager.js";
+import { formatCurrency } from "../utils/helpers.js";
 
 export class BankManager extends AuthManager {
   #balance;
@@ -12,7 +13,7 @@ export class BankManager extends AuthManager {
   }
   getBalance() {
     const currentUser = this.getCurrentUser();
-    return `$${Number(currentUser.balance).toFixed(2)}`;
+    return `${formatCurrency(currentUser.balance)}`;
   }
   getTransaction() {
     return this.getCurrentUser().transactions;
