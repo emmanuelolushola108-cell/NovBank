@@ -1,7 +1,7 @@
 body {
   min-height: 100vh;
 }
-.accounts,
+
 .recent_transaction_con {
   display: flex;
   flex-direction: column;
@@ -9,6 +9,14 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: 1.6rem;
   margin-bottom: 7rem;
+  border-radius: 1.6rem;
+}
+.accounts {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 1.6rem;
   border-radius: 1.6rem;
 }
 .dashboard_main {
