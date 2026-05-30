@@ -274,6 +274,24 @@ a {
   outline: none;
   color: var(--text-primary);
 }
+.hor_divider_left {
+  display: flex;
+  flex: 1;
+  height: 1px;
+  width: min(8rem, 100%);
+  border-radius: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-right: 0.8rem;
+}
+.hor_divider_right {
+  display: flex;
+  flex: 1;
+  height: 1px;
+  width: min(8rem, 100%);
+  border-radius: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: 0.8rem;
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
