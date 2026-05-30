@@ -14,8 +14,15 @@ const openEye = document.querySelector(".open_eye");
 const closeEye = document.querySelector(".close_eye");
 const eyeCon = document.querySelector(".eye_con");
 const notificationCount = document.querySelector(".notification_count");
+const notificationIcon = document.querySelectorAll(".notification_icon");
 export const dashboardManager = new BankManager();
 
+notificationIcon.forEach((icon) => {
+  icon.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = "notificationPage.html";
+  });
+});
 payBillBtn.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = "paybills.html";

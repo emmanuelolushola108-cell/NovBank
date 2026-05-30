@@ -36,10 +36,11 @@ export class AuthManager {
           userId: 20,
           title: "Registration Completed",
           message:
-            "Your account setup has been completed successfully. Welcome to a smarter banking experience with AblePay Bank, where security, convenience, and reliability come first. Start exploring our services and enjoy effortless banking today.",
+            "Your account setup has been completed successfully. Welcome to a smarter banking experience with NovaBank, where security, convenience, and reliability come first. Start exploring our services and enjoy effortless banking today.",
           type: "success",
           read: false,
           createdAt: new Date().toLocaleTimeString(),
+          icon: "✔",
         },
       ],
     };
