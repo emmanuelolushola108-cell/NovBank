@@ -30,7 +30,18 @@ export class AuthManager {
       id: createId(),
       balance: 10000,
       transactions: [],
-      notification: [],
+      notifications: [
+        {
+          id: 1,
+          userId: 20,
+          title: "Registration Completed",
+          message:
+            "Your account setup has been completed successfully. Welcome to a smarter banking experience with AblePay Bank, where security, convenience, and reliability come first. Start exploring our services and enjoy effortless banking today.",
+          type: "success",
+          read: false,
+          createdAt: new Date().toLocaleTimeString(),
+        },
+      ],
     };
     this.addUser(user);
     this.saveUser();

@@ -13,6 +13,7 @@ const greetMessage = document.querySelector(".greet");
 const openEye = document.querySelector(".open_eye");
 const closeEye = document.querySelector(".close_eye");
 const eyeCon = document.querySelector(".eye_con");
+const notificationCount = document.querySelector(".notification_count");
 export const dashboardManager = new BankManager();
 
 payBillBtn.addEventListener("click", (e) => {
@@ -37,6 +38,8 @@ const renderDashboard = function () {
   accountNoCon.textContent = `Account Number : ${dashboardManager.getCurrentUser().accountNo}`;
   renderTransactions(dashboardManager.getTransaction(), transactionsCon);
   greetMessage.textContent = `${greetUser()},`;
+  notificationCount.textContent =
+    dashboardManager.getCurrentUser().notifications.length;
 };
 renderDashboard();
 function clearEyeClasses() {

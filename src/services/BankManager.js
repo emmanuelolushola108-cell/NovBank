@@ -67,6 +67,26 @@ export class BankManager extends AuthManager {
       timestamp: new Date().toLocaleDateString(),
       reference: `TNX${Date.now()}`,
     });
+
+    currentUser.notifications.push({
+      amount: inputs.amount,
+      sender: currentUser.fullName,
+      receiver: receiver.fullName,
+      type: "transfer",
+      timestamp: new Date().toLocaleDateString(),
+      reference: `TNX${Date.now()}`,
+      naration: inputs.naration,
+    });
+
+    receiver.transactions.push({
+      amount: inputs.amount,
+      sender: currentUser.fullName,
+      receiver: receiver.fullName,
+      type: "deposit",
+      timestamp: new Date().toLocaleDateString(),
+      reference: `TNX${Date.now()}`,
+      naration: inputs.naration,
+    });
     this.saveUser();
     this.saveCurrentUser(currentUser);
 
